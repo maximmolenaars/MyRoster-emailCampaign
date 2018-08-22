@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700|Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <style>
         h1 {
             font-family: 'Poppins', 'Arial', 'Arial-Black', sans-serif;
@@ -39,8 +40,8 @@
         .footer-flex {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            padding: 100px 0 100px 0;
+            justify-content: space-between;
+            padding: 50px 0 100px 0;
         }
 
         img {
@@ -50,8 +51,14 @@
             margin-right: auto;
         }
 
-        .footer {
+        .icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
+        .phone {
+            align-self: center;
         }
 
     </style>
@@ -85,20 +92,30 @@
 
     <!--FOOTER -->
     <div class="article footer-flex">
-        <div class="phone">
+
+        <div class="icon phone">
+
+           <span style="font-size: 70px; color: #00A1DE; text-align: center;">
+             <i class="fas fa-mobile-alt"></i>
+           </span>
             <a href="tel:0201234567">020 123 45 67</a>
+
         </div>
 
-        <div class="email">
+        <div class="icon email">
+           <span style="font-size: 70px; color: #00A1DE; text-align: center;">
+             <i class="fas fa-envelope"></i>
+           </span>
             <a href="mailto:myroster@klm.com">Myroster@klm.com</a>
         </div>
 
-        <div class="yammer">
+        <div class="icon yammer">
+           <span style="font-size: 70px; color: #00A1DE; text-align: center;">
+             <i class="fas fa-stroopwafel"></i>
+           </span>
             <a href="www.google.nl">Yammer</a>
         </div>
     </div>
-
-
 
 </body>
 </html>
